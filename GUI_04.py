@@ -6,6 +6,12 @@ from PyQt5.QtCore import *
 from screeninfo import get_monitors
 import time
 
+
+# This application features the following:
+# 1. A loading bar that can be activated via a button and function
+# 2. Two frames, one with an example of how text can be added
+# 3. A button which opens a file selections window
+
 class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
@@ -60,9 +66,25 @@ class MainWindow(QWidget):
         self.Label03.move(0,LabelSeparation * 2)
         self.Label03.setFont(QFont('Helveitca', 18))
 
+        ##### Frame 02 ######
+
         # Create a text box to add to frame01
         my_frame02 = QFrame()
         my_frame02.setFrameShape(QFrame.StyledPanel)
+
+        ## Add text to the frame
+
+
+
+
+
+
+
+
+        ########################
+
+
+
 
         # Add the progress bar
         self.progress_bar = QProgressBar(self)
